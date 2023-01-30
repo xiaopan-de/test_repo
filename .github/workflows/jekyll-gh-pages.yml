@@ -41,7 +41,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://xiaopan-de.github.io/test_repo/code_coverage
     runs-on: ubuntu-latest
     needs: build
     steps:
