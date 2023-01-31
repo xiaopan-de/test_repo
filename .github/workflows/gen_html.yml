@@ -1,0 +1,22 @@
+name: Run-CI-Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  checks_and_tests:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run small checks
+        run: ./gen_html.sh 
+        shell: bash
+
