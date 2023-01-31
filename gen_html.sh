@@ -3,3 +3,5 @@
 set -u
 
 echo "Hello World" > index.html
+
+exit 0
