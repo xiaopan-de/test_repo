@@ -2,6 +2,7 @@
 
 set -u
 
-echo "Hello World" > index.html
+mkdir -p subfolder
+echo "Hello World" > subfolder/index.html
 
 exit 0
