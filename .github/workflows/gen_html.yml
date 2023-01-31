@@ -16,9 +16,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Run small checks
+      - name: generate html page
         run: 
           chmod 0755 gen_html.sh && ./gen_html.sh
-          ls -l subfolder/index.html
         shell: bash
 

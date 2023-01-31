@@ -2,7 +2,9 @@
 
 set -u
 
-mkdir -p subfolder
-echo "Hello World" > subfolder/index.html
+mkdir -p subfolder/test
+echo "Hello World" > subfolder/test/index.html
+
+ls -l subfolder/test/index.html
 
 exit 0
